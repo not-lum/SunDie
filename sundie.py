@@ -105,11 +105,4 @@ while run:
 			place = text.get_rect(center=(WIDTH / 2, HEIGHT / 2))
 
 
-
-
 	pygame.display.update()
-	pygame.display.update()
-
-
-
-
