@@ -3,7 +3,7 @@ import pygame
 WIDTH = 800
 HEIGHT = 500
 FPS = 60
-
+playerspeed = 10
 
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
@@ -83,9 +83,9 @@ while run:
 		if b2 < 0:
 			b2 = 0
 
-		if x2 == x:
+		if x2 == x - 2:
 			move = False
-			pygame.time.delay(1000)
+			pygame.time.delay(2000)
 			move2 = True
 	if move2:
 		r2 += 7
