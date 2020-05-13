@@ -3,7 +3,7 @@ import pygame
 WIDTH = 800
 HEIGHT = 500
 FPS = 60
-playerspeed = 10
+
 
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
