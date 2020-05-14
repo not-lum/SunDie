@@ -76,7 +76,7 @@ while run:
 
 		if x2 == x - 2:
 			move = False
-			pygame.time.delay(2000)
+			pygame.time.delay(3000)
 			move2 = True
 	if move2:
 		r2 += 7
