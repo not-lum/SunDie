@@ -29,12 +29,13 @@ b2 = 255
 pygame.init()
 
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("The Sundie")
+pygame.display.set_caption("The Eclipse")
 clock = pygame.time.Clock()
 
 font = pygame.font.SysFont('Verdana', 80)
-text = font.render("The Sundie", 1, BLACK)
+text = font.render("The Eclipse", 1, (r, g, b))
 place = text.get_rect(center=(WIDTH / 2, HEIGHT / 2 + 50))
+
 
 move = True
 run = True
@@ -50,17 +51,9 @@ while run:
 
 	if r > 255:
 		r = 255
-	if g > 255:
 		g = 255
-	if b > 255:
 		b = 255
-
-	text = font.render("The Sundie", 1, (r, g, b))
-	pygame.display.update()
-
-
-
-
+	text = font.render("The Eclipse", 1, (r, g, b))
 
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT:
@@ -78,9 +71,7 @@ while run:
 
 		if r2 < 0:
 			r2 = 0
-		if g2 < 0:
 			g2 = 0
-		if b2 < 0:
 			b2 = 0
 
 		if x2 == x - 2:
@@ -95,14 +86,10 @@ while run:
 
 		if r2 > 255:
 			r2 = 255
-		if g2 > 255:
 			g2 = 255
-		if b2 > 255:
 			b2 = 255
-		if r2 == 255 and g2 == 255 and b2 == 255:
 			font = pygame.font.SysFont('Verdana', 50)
 			text = font.render("Thanks for watching!", 1, BLACK)
 			place = text.get_rect(center=(WIDTH / 2, HEIGHT / 2))
-
 
 	pygame.display.update()
